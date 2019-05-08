@@ -31,6 +31,6 @@
   <br/>
 6.wordLinearR for word2vec and Linear Regression:
 
-  * download file: [GoogleNews-vectors-negative300.bin.gz] (https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit) or [GoogleNews-vectors-negative300-SLIM.bin.gz] (https://github.com/eyaler/word2vec-slim/blob/master/GoogleNews-vectors-negative300-SLIM.bin.gz)
+  * download file: [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit) or [GoogleNews-vectors-negative300-SLIM.bin.gz](https://github.com/eyaler/word2vec-slim/blob/master/GoogleNews-vectors-negative300-SLIM.bin.gz)
   * Run command `python3 LR.py wordLinearR.py`
   <br/>
