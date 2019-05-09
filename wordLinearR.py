@@ -87,12 +87,6 @@ df.shape
 df.index = range(502)
 df['Text'] = df['Text'].apply(clean_text)
 
-
-X = df.Text
-y = df.Kind
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state = 42)
-
-
 # Word2vec and Linear Regression
 # https://github.com/eyaler/word2vec-slim/blob/master/GoogleNews-vectors-negative300-SLIM.bin.gz
 # https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit GoogleNews-vectors-negative300.bin.gz
@@ -113,9 +107,9 @@ linreg = linear_model.LinearRegression()
 linreg = linreg.fit(X_train_word_average, train['Kind'])
   
 # variance score: 1 means perfect prediction 
-print('Variance score: {}'.format(linreg.score(X_test, test.Kind)))
+print('Variance score: {}'.format(linreg.score(X_test_word_average, test.Kind)))
 
 # Make predictions using the testing set
-diabetes_y_pred = linreg.predict(X_test)
+diabetes_y_pred = linreg.predict(X_test_word_average)
 # Explained variance score: 1 is perfect prediction 
 print('Variance score: %.2f' % r2_score(test.Kind, diabetes_y_pred))
