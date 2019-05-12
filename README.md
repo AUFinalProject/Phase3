@@ -16,7 +16,7 @@
 
   * Run command `python3 docLinearR.py`
   <br/>
-3.tfIDF for Naive Bayes, SVM and Logistic Regression:
+3.tfIDF for Naive Bayes, SVM, Logistic Regression, MLP, Random Forest and KNN:
 
   * Run command `python3 tfIDF.py`
   <br/>
@@ -24,7 +24,7 @@
 
   * Run command `python3 tfIDF_Linear.py`
   <br/>
-5.wordLR for word2vec and Logistic Regression:
+5.wordLR for word2vec and Naive Bayes, SVM, Logistic Regression, MLP, Random Forest and KNN:
 
   * download file: [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit) or [GoogleNews-vectors-negative300-SLIM.bin.gz](https://github.com/eyaler/word2vec-slim/blob/master/GoogleNews-vectors-negative300-SLIM.bin.gz)
   * Run command `python3 wordLR.py`
